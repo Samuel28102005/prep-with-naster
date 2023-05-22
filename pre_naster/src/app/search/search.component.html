@@ -1,0 +1,7 @@
+<input type="text" #prodotti>
+<button (click)="cerca(prodotti)">Search</button>
+<div *ngFor="let x of ris">
+    <img src="{{x.image_front_small_url}}" alt="">
+    <a routerLink="/pasta/{{x._id}}">{{x.generic_name}}</a>
+
+</div>
